@@ -1,0 +1,136 @@
+@import "../default/reset";
+@import "../default/variables";
+
+.join-outer-container {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background-color: $black-primary;
+	color: $white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.join-inner-container {
+		width: 30%;
+		height: 50%;
+		// background-color: $white-16-overlay;
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		text-align: center;
+		padding: 2rem 1rem;
+
+		.heading {
+			font-size: 2.25rem;
+			color: $blue-primary;
+			padding-bottom: 1rem;
+			margin-bottom: 2rem;
+			border-bottom: 2px solid $white;
+		}
+
+		.join-input {
+			padding: 1rem 0.75rem;
+			margin-bottom: 2rem;
+			font-size: 1rem;
+			background-color: $white-12-overlay;
+			color: $white;
+			border-radius: 0.5rem;
+			outline: none;
+			border: 1px solid $white-0-overlay;
+			transition: all 0.3s ease;
+
+			&:hover {
+				border-color: $blue-primary;
+			}
+		}
+
+		::placeholder {
+			color: $white;
+		}
+
+		.button {
+			margin-top: 1rem;
+			width: 100%;
+			padding: 1rem;
+			font-size: 1rem;
+			border-radius: 1rem;
+			outline: none;
+			border: none;
+			background-color: $blue-primary;
+			color: $white;
+			cursor: pointer;
+		}
+	}
+}
+
+html,
+body {
+	font-family: "Roboto", sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+#root {
+	height: 100vh;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.joinOuterContainer {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	height: 100vh;
+	align-items: center;
+	background-color: #1a1a1d;
+}
+
+.joinInnerContainer {
+	width: 20%;
+}
+
+.joinInput {
+	border-radius: 0;
+	padding: 15px 20px;
+	width: 100%;
+}
+
+.heading {
+	color: white;
+	font-size: 2.5em;
+	padding-bottom: 10px;
+	border-bottom: 2px solid white;
+}
+
+.button {
+	color: #fff !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #2979ff;
+	padding: 20px;
+	border-radius: 5px;
+	display: inline-block;
+	border: none;
+	width: 100%;
+}
+
+.mt-20 {
+	margin-top: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+	.joinOuterContainer {
+		height: 100%;
+	}
+
+	.joinInnerContainer {
+		width: 90%;
+	}
+}
+
+button:focus {
+	outline: 0;
+}

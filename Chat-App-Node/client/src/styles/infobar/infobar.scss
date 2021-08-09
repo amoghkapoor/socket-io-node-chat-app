@@ -1,0 +1,68 @@
+@import "../default/reset";
+@import "../default/variables";
+
+.infobar {
+	padding: 1rem;
+	background-color: $blue-primary;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.25rem;
+	z-index: 5;
+
+	h3 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: normal;
+
+		.online-icon {
+			margin-right: 2rem;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background-color: green;
+		}
+	}
+
+	a {
+		font-size: 1.5rem;
+	}
+}
+
+.infoBar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #2979ff;
+	border-radius: 4px 4px 0 0;
+	height: 60px;
+	width: 100%;
+}
+
+.leftInnerContainer {
+	flex: 0.5;
+	display: flex;
+	align-items: center;
+	margin-left: 5%;
+	color: white;
+}
+
+.rightInnerContainer {
+	display: flex;
+	flex: 0.5;
+	justify-content: flex-end;
+	margin-right: 5%;
+}
+
+.onlineIcon {
+	margin-right: 5%;
+}
+
+.online-icon {
+	margin-right: 2rem;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: rgb(47, 201, 47);
+}
